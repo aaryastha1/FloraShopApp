@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="647dp"
+        android:layout_height="1164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/flow1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flow" />
+
+    <TextView
+        android:id="@+id/florashop"
+        android:layout_width="153dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="5dp"
+        android:text="Flora Shop"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/ayf"
+        android:layout_width="236dp"
+        android:layout_height="36dp"
+        android:fontFamily="cursive"
+        android:text="Arrange your flowers"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/florashop"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/florashop"
+        app:layout_constraintTop_toBottomOf="@+id/florashop" />
+
+    <TextView
+        android:id="@+id/signuphere"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:text="Signup Here"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/ayf"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/ayf"
+        app:layout_constraintTop_toBottomOf="@+id/ayf" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="347dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/edit_text"
+        android:drawableLeft="@drawable/baseline_person_add_alt_1_24"
+        android:drawablePadding="15dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/signuphere"
+        app:layout_constraintStart_toStartOf="@+id/signuphere"
+        app:layout_constraintTop_toBottomOf="@+id/signuphere" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="347dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:drawable/edit_text"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="15dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="347dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:drawable/edit_text"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:elevation="2dp"
+        android:ems="10"
+        android:hint="Create password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="62dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:text="Or"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/signupwith"
+        android:layout_width="112dp"
+        android:layout_height="42dp"
+        android:text="Signup with"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/or"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="@+id/or"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/google"
+        android:layout_width="152dp"
+        android:layout_height="67dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/google"
+        android:paddingLeft="15dp"
+        android:text="Google"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/fb"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupwith" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fb"
+        android:layout_width="152dp"
+        android:layout_height="67dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/fb"
+        android:paddingLeft="15dp"
+        android:text="Facebook"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/google"
+        app:layout_constraintTop_toBottomOf="@+id/signupwith" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createaccountbtn"
+        android:layout_width="178dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/BabyPink"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fb" />
+
+    <TextView
+        android:id="@+id/donthaveaccount"
+        android:layout_width="279dp"
+        android:layout_height="37dp"
+        android:text="Already have an account?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createaccountbtn"
+        app:layout_constraintVertical_bias="0.45" />
+</androidx.constraintlayout.widget.ConstraintLayout>
