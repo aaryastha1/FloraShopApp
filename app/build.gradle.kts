@@ -4,6 +4,10 @@ plugins {
 }
 
 android {
+    buildFeatures{
+        viewBinding = true
+    }
+
     namespace = "com.example.florashop"
     compileSdk = 34
 
@@ -16,10 +20,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-buildFeatures{
-    viewBinding = true
-}
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -45,7 +45,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.car.ui.lib)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }
