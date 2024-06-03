@@ -16,9 +16,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-buildFeatures{
-    viewBinding = true
-}
+    buildFeatures{
+        viewBinding = true
+    }
 
     buildTypes {
         release {
@@ -51,7 +51,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    
+
 
 
 
@@ -60,7 +60,6 @@ dependencies {
 
 
 }
-
 
 
 
