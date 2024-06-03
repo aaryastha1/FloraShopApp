@@ -190,7 +190,7 @@
         app:layout_constraintTop_toBottomOf="@+id/fb" />
 
     <TextView
-        android:id="@+id/donthaveaccount"
+        android:id="@+id/alreadyhaveaccount"
         android:layout_width="279dp"
         android:layout_height="37dp"
         android:text="Already have an account?"
